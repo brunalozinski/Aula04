@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Valor da viagem</title>
+</head>
+<body>
+    <div class="box">
+        
+        <form method="POST" action="./calcular.php">
+
+            <h1>Empresa PHL</h1>
+        
+            <label for="cidadeOrigem">Cidade de origem</label>
+            <input type="text" class="input_text" id="cidadeOrigem" name="cidadeOrigem">
+
+            <label for="cidadeDestino">Cidade de destino</label>
+            <input type="text" class="input_text" id="cidadeDestino" name="cidadeDestino">
+
+            <label for="distanciaKM">Distância em KM</label>
+            <input type="number" class="input_number" id="distanciaKM" name="distanciaKM">
+
+            <label for="pedagios">Quantidade de pedágios</label>
+            <input type="number" class="input_number" id="pedagios" name="pedagios">
+
+            <button> Calcular</button>
+        
+        </form>
+    </div>
+</body>
+</html>
