@@ -15,16 +15,18 @@ body{
     background-image: linear-gradient(rgb(194, 245, 213), rgb(126, 252, 193));
 }
 
-/* .box {
-    width: 350px;
-    height: 350px;
-} */
-
-main {
+main{
     flex-grow: 1;
 }
 
 form{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 10px gray, 0px 5px 20px gray;
+    padding: 30px;
+    background-color: white;
+}
+.caixa {
     display: flex;
     flex-direction: column;
     box-shadow: 0px 5px 10px gray, 0px 5px 20px gray;
@@ -46,28 +48,27 @@ label {
     margin-bottom: 5px;
 }
 
+.genero {
+    margin-bottom: 10px;
+}
+
 select {
     width: 100%;
     margin-bottom: 15px;
     height: 30px;
 }
 
-.genero {
-    margin-bottom: 20px;
-    /* display: flex;
-    justify-content: center; */
+.input_radio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    gap: 10px;
 }
 
-.fem {
-   width: 15px;
-}
-
-.masc {
-    width: 15px;
-}
-
-.outros {
-    width: 15px;
+.input_radio input {
+    width: 20px;
 }
 
 button{

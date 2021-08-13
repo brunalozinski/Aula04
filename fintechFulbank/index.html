@@ -12,39 +12,38 @@
         
         <form method="POST" action="./calcular.php">
 
-            <h1>Fintech Fulbank</h1>
+            <h1>Empresa Fulbank</h1>
         
             <label for="nome">nome</label>
-            <input type="text" class="input_text" id="nome" name="nome" placeholder="nome completo">
+            <input type="text" class="input_text" id="nome" name="nome" placeholder="nome completo" required>
 
             <label for="salarioAtual">Salário Atual</label>
-            <input type="number" class="input_number" id="salarioAtual" name="salarioAtual" placeholder="R$">
+            <input type="number" class="input_number" id="salarioAtual" name="salarioAtual" placeholder="R$" required>
 
-            <label class="genero" for="genero">Selecione seu gênero</label>
+            <div class="genero">Selecione seu gênero</div>
 
-            <div class="fem">
-                <label for="fem">Feminino:</label>
-                <input type="radio" id="fem" name="genero" value="F">
+            <div class="input_radio">
+                <input type="radio" id="masc" name="genero" value="M" required>
+                <label for="masc">Masculino</label>
             </div>
             
-            <div class="masc">
-                <label for="masc">Masculino:</label>
-                <input type="radio" id="masc" name="genero" value="M">
+            <div class="input_radio">
+                <input type="radio" id="fem" name="genero" value="F" required>
+                <label for="fem">Feminino</label>
             </div> 
 
-            <div class="outros">
-                <label for="outros">Outros:</label>
-                <input type="radio" id="outros" name="genero" value="O">
-
+            <div class="input_radio">
+                <input type="radio" id="outros" name="genero" value="O" required>
+                <label for="outros">Outros</label>
             </div>
 
             <label for="cargo">Cargo: </label>
-            <select name="cargo" id="cargo">
+            <select name="cargo" id="cargo" required>
 
                 <option selected disabled value="">Selecione</option>
                 <option value="Administrador">Administrador</option>
                 <option value="Analista">Analista</option>
-                <option value="GerenteMarketing">Gerente de Marketing</option>
+                <option value="Gerente de Marketing">Gerente de Marketing</option>
                 <option value="Assistente">Assistente</option>
                 <option value="Estagiario">Estagiario</option>
 
@@ -54,5 +53,11 @@
         
         </form>
     </div>
+
+    <!-- <footer>
+        
+        <span>Copyright &copy; 2021 | Bruna Lozinski</span>
+        
+    </footer> -->
 </body>
 </html>
