@@ -10,6 +10,7 @@ if (isset ($_POST["nome"]) && isset($_POST["salarioAtual"])
     $cargo = $_POST["cargo"];
 
     $novoSalario = $_POST["novoSalario"];
+    
 } else {
     echo "Campos não preenchidos";
 } 
